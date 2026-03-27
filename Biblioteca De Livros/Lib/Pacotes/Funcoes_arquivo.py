@@ -1,4 +1,4 @@
-from Lib.interface import *
+from Pacotes.Interface import *
 
 def cria_arquivo(n):
     try:

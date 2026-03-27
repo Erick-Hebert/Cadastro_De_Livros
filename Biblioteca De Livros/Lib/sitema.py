@@ -1,4 +1,4 @@
-from Lib.arquivo import *
+from Pacotes.Funcoes_arquivo import *
 from time import sleep
 
 arq = 'Biblioteca.txt'
