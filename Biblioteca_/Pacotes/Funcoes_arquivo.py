@@ -1,5 +1,25 @@
 from Pacotes.Interface import *
 
+import mysql.connector
+
+def inicia_bd():
+    try:
+        mydb = mysql.connector.connect(
+            host="localhost",
+            user="teste",
+            password="teste123"
+        )
+        mycursor = mydb.cursor()
+
+        mycursor.execute("CREATE DATABASE Biblioteca")
+        
+        cria_tabela(mycursor)
+    except:
+        print('Não foi possível conectar ao banco de dados')
+
+def cria_tabela(cursor):
+    cursor.execute("CREATE TABLE")        
+
 def cria_arquivo(n):
     try:
         a = open(n, 'wt+')

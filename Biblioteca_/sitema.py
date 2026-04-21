@@ -18,7 +18,7 @@ while True:
         a = str(input('Digite o nome do autor(a): ')).strip()
         cadastra_livro(arq, l, a)
     elif op == 3:
-        cabecalho('Fechando o sistema... até logo')
+        cabecalho('Fechando o sistema...\n até logo')
         break
     else:
         print('\033[0;31mDigite uma opção válida!\033[m')
